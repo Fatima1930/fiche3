@@ -1,5 +1,35 @@
-# fiche3
-public  class Segment {
+package ficheTd3;
+
+public class Point{
+    private float abs ;
+    private float ord ;
+    public Point () {
+        this.abs = 0;
+        this.ord= 0;
+    }
+    public  Point (float abs ) {
+        this.abs = abs;
+        this.ord = abs;
+
+    }
+    public Point(float abs ,float ord) {
+        this.abs = abs;
+        this.ord = ord;
+    }
+    public Point symetrie() {
+        return new Point(-abs, ord);
+    }
+   public  String toString (){
+       return "("+ abs +","+ ord +")";
+       public float  getabs() {
+        return abs ;
+    }
+    public float getord() {
+        return ord ;
+    }
+
+}
+ public  class Segment {
     public Point A = new.Point();
     public Point B = new.Point();
 }
