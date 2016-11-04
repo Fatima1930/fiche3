@@ -35,7 +35,7 @@ public class Point{
 }
 public Segment (Point A,Point B) {
     this.A = A;
-    this.B = B;
+    this.B = B;//
 }
 public double distance (Point A,Point B ){
     return math.sqrt(
